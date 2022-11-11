@@ -56,9 +56,10 @@ public class UserRegistration {
         Boolean result6 = validation.password3("Ussaahir12");
         Assertions.assertEquals(result6, true);
     }
+    @Test
+    void given_password3_should_returnTrue() {
+        UserValidation validation = new UserValidation();
+        Boolean result7 = validation.password4("Ussaahir12@");
+        Assertions.assertEquals(result7, true);
+    }
 }
-/*Rule3
-– Should
-have at least 1
-numeric number in
-the password - NOTE – All rules must be passed*/
