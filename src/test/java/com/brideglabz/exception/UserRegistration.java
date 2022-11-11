@@ -17,7 +17,7 @@ public class UserRegistration {
     @Test
     void given_first_name_should_returnTrue() {
         UserValidation validation = new UserValidation();
-        Boolean result = validation.checkFirstName("Aditya");
+        Boolean result = validation.checkFirstName("Usha");
         Assertions.assertEquals(result, true);
     }
     @Test
@@ -25,5 +25,11 @@ public class UserRegistration {
         UserValidation validation = new UserValidation();
         Boolean result1 = validation.checkLastName("Ahirwar");
         Assertions.assertEquals(result1, true);
+    }
+    @Test
+    void given_email_id_should_returnTrue() {
+        UserValidation validation = new UserValidation();
+        Boolean result2 = validation.checkEmailId("UshaAhirwar@gmail.com");
+        Assertions.assertEquals(result2, true);
     }
 }
