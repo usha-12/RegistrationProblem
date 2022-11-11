@@ -68,4 +68,9 @@ public class UserRegistration {
         Assertions.assertEquals(result8, true);
     }
 }
-//
+/*Write JUnit
+
+Parameterised Test to
+
+validate multiple entry
+for the Email Address.*/
