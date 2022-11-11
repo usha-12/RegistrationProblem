@@ -44,13 +44,14 @@ public class UserRegistration {
         Boolean result4 = validation.password("ussaahir");
         Assertions.assertEquals(result4, true);
     }
+    @Test
+    void given_password1_should_returnTrue() {
+        UserValidation validation = new UserValidation();
+        Boolean result5 = validation.password2("Ussaahir");
+        Assertions.assertEquals(result5, true);
+    }
 }
-/*As a User need to
-follow pre
-
--defined
-Password rules.
-Rule1
-
-– minimum 8
-Characters - NOTE – All rules must be passed*/
+/*Rule2
+– Should
+have at least 1
+Upper Case - NOTE – All rules must be passed*/
